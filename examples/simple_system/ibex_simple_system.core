@@ -171,11 +171,10 @@ targets:
           # Disabling tracing reduces compile times but doesn't have a
           # huge influence on runtime performance.
           - '--trace'
-          - '--trace-fst' # this requires -DVM_TRACE_FMT_FST in CFLAGS below!
           - '--trace-structs'
           - '--trace-params'
           - '--trace-max-array 1024'
-          - '-CFLAGS "-std=c++11 -Wall -DVM_TRACE_FMT_FST -DTOPLEVEL_NAME=ibex_simple_system -g"'
+          - '-CFLAGS "-std=c++11 -Wall -DTOPLEVEL_NAME=ibex_simple_system -g"'
           - '-LDFLAGS "-pthread -lutil -lelf"'
           - "-Wall"
           - "-Wwarn-IMPERFECTSCH"
