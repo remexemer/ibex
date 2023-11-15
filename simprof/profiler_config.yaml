@@ -1,0 +1,15 @@
+# raw:
+#   presenters:
+#     table:
+#       shown_columns:
+#         - timestamp
+#         - timespan
+#         - cycle
+#         - n_cycle
+#         - pc
+#       formatter:
+#         pc: '{:x}'
+
+flow:
+  verbose: True
+  # x_axis: cycle

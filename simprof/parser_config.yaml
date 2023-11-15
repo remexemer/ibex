@@ -1,0 +1,17 @@
+simlog:
+  program_counters:
+    - name: pc
+      retire: "pc_vld == 1"
+  # signals:
+  #   - m_cycle
+  #   - m_inst_ret
+  #   - m_cycle_lsu
+  #   - m_cycle_if
+  #   - m_load
+  #   - m_store
+  #   - m_jump
+  #   - m_br
+  #   - m_br_taken
+  #   - m_instr_ret_c
+  #   - m_cycle_mul_wait
+  #   - m_cycle_div_wait

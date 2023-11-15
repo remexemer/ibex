@@ -1,0 +1,31 @@
+strobe:
+  signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.clk_i
+signals:
+  - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.rvfi_pc_rdata
+    alias: pc
+  - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.rvfi_valid
+    alias: pc_vld
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[0]
+  #   alias: m_cycle
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[2]
+  #   alias: m_inst_ret
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[3]
+  #   alias: m_cycle_lsu
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[4]
+  #   alias: m_cycle_if
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[5]
+  #   alias: m_load
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[6]
+  #   alias: m_store
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[7]
+  #   alias: m_jump
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[8]
+  #   alias: m_br
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[9]
+  #   alias: m_br_taken
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[10]
+  #   alias: m_instr_ret_c
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[11]
+  #   alias: m_cycle_mul_wait
+  # - signal: TOP.ibex_simple_system.u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter[12]
+  #   alias: m_cycle_div_wait
