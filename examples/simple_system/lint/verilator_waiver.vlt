@@ -38,3 +38,22 @@ lint_off -rule WIDTH -file "*/rtl/ibex_simple_system.sv"
 public -module "ibex_simple_system" -var "RV32E"
 public -module "ibex_simple_system" -var "RV32M"
 public -module "ibex_simple_system" -var "RV32B"
+
+tracing_off -file "../src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv"
+tracing_off -file "../src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer_pkg.sv"
+tracing_off -file "../src/lowrisc_prim_ram_1p_pkg_0/rtl/prim_ram_1p_pkg.sv"
+tracing_off -file "../src/lowrisc_prim_ram_2p_pkg_0/rtl/prim_ram_2p_pkg.sv"
+tracing_off -file "../src/lowrisc_prim_cipher_pkg_0.1/rtl/prim_cipher_pkg.sv"
+tracing_off -file "../src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv"
+tracing_off -file "../src/lowrisc_prim_secded_0.1/rtl/prim_secded_pkg.sv"
+tracing_off -scope "*" -levels 0
+// tracing_off -scope "u_bus.*" -levels 0
+// tracing_off -scope "u_ram.*" -levels 0
+// tracing_off -scope "u_simulator_ctrl.*" -levels 0
+// tracing_off -scope "u_timer.*" -levels 0
+tracing_on -scope "u_top.u_ibex_top.u_ibex_core.clk_i"
+tracing_on -scope "u_top.u_ibex_top.u_ibex_core.rst_ni"
+tracing_on -scope "u_top.u_ibex_top.u_ibex_core.rvfi_pc_rdata"
+tracing_on -scope "u_top.u_ibex_top.u_ibex_core.rvfi_valid"
+tracing_on -scope "u_top.u_ibex_top.u_ibex_core.cs_registers_i.mhpmcounter"
+tracing_on -scope "u_top.u_ibex_top.gen_regfile_ff.register_file_i.rf_reg"
