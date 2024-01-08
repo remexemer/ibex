@@ -13,3 +13,9 @@
 flow:
   verbose: True
   # x_axis: cycle
+
+latency:
+  measurements:
+    - name: count_1s_0s
+      start: "pc == 0x100414"
+      stop: "pc == 0x100430"
