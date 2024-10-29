@@ -1,0 +1,16 @@
+flow:
+  verbose: True
+  x_axis: cycle
+  metrics:
+    - name: IPC
+      formula: 'n_instr / n_cycle'
+  presenters:
+    perfetto:
+      shown_counters:
+        - IPC
+    flamegraph:
+      metric: IPC
+coverage:
+  metrics:
+    - name: IPC
+      formula: 'n_instr / n_cycle'
